@@ -1,0 +1,31 @@
+{
+  "name": "windows-network-interface-monitor",
+  "version": "1.0.0",
+  "description": "A utility to monitor a network interface on Windows for IP changes",
+  "main": "lib/network-interface-monitor.js",
+  "keywords": [
+    "windows",
+    "network",
+    "network interface",
+    "monitor"
+  ],
+  "author": "blu3mania <blu3mania@hotmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/blu3mania/windows-network-interface-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/blu3mania/windows-network-interface-monitor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blu3mania/windows-network-interface-monitor.git"
+  },
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  }
+}
