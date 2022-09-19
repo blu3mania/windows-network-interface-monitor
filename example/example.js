@@ -42,7 +42,7 @@ function main() {
     process.on('SIGINT', () => {
         print(`SIGINT received. Stop monitoring interface "${networkInterface}" and exiting...`);
         if (!monitor.stop()) {
-            error('Failed to stop network interface monitor.');
+            print('Failed to stop network interface monitor.');
         }
         process.exit();
     });

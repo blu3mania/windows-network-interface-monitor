@@ -9,7 +9,7 @@ This library provides the ability to monitor a network interface on Windows for 
 
 It is recommended to use npm to install windows-network-interface-monitor:
 
-`npm install  windows-network-interface-monitor`
+`npm install windows-network-interface-monitor`
 
 Note that the required package "ffi-napi" uses native modules and relies on "node-gyp" to build the project.
 As a result, there are some prerequisites that need to be installed/configured. Please refer to [node-gyp's
@@ -74,11 +74,11 @@ handle obtained from Windows native API.
 ## Example
 
 ```
-var NetworkInterfaceMonitor = require('windows-network-interface-monitor');
-var networkInterface = "Local Area Connection";
-var addressFamily = "IPv4";
+const NetworkInterfaceMonitor = require('windows-network-interface-monitor');
+const networkInterface = "Local Area Connection";
+const addressFamily = "IPv4";
 
-var monitor = new NetworkInterfaceMonitor(networkInterface, addressFamily, (address, eventType) => {
+const monitor = new NetworkInterfaceMonitor(networkInterface, addressFamily, (address, eventType) => {
     switch (eventType) {
         case NetworkInterfaceMonitor.EventType.Initial:
             if (address !== null) {
@@ -103,6 +103,9 @@ var monitor = new NetworkInterfaceMonitor(networkInterface, addressFamily, (addr
     }
 });
 monitor.start();
+
+// Wait for events here
+
+// When monitor is no longer needed
 monitor.stop();
 ```
-

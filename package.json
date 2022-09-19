@@ -1,6 +1,6 @@
 {
   "name": "windows-network-interface-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility to monitor a network interface on Windows for IP changes",
   "main": "lib/network-interface-monitor.js",
   "keywords": [
@@ -26,6 +26,7 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "ffi-napi": "^4.0.3"
   }
 }
