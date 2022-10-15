@@ -68,7 +68,7 @@ both. The last parameter is the callback function. The monitor will pass 2 param
 
 After instantiating a NetworkInterfaceMonitor, call start() on it to start the monitor.
 
-When the monitor is no longer needed, *make sure to call stop()* to properly release the underlying
+When the monitor is no longer needed, **make sure to call stop()** to properly release the underlying
 handle obtained from Windows native API.
 
 ## Example
