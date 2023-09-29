@@ -11,9 +11,11 @@ It is recommended to use npm to install windows-network-interface-monitor:
 
 `npm install windows-network-interface-monitor`
 
-Note that the required package "ffi-napi" uses native modules and relies on "node-gyp" to build the project.
-As a result, there are some prerequisites that need to be installed/configured. Please refer to [node-gyp's
-instructions](https://github.com/nodejs/node-gyp#installation).
+Note that the required package "ffi-napi" uses native modules and relies on "node-gyp" to build the project
+if needed, depending on whether a prebuilt binary exists or not. As a result, there may be some prerequisites
+that are needed to be installed/configured. The recommendation is to try to install this package first, and
+if it ends up building the native binary on the fly and node-gyp complains about something, then refer to
+[node-gyp's instructions](https://github.com/nodejs/node-gyp#installation) to have those prerequisites installed.
 
 ## Usage
 First, find out the network interface to monitor for. The name should be obtained from the output of
